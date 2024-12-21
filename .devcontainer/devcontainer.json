@@ -1,0 +1,13 @@
+{
+  "name": "Python 3.11 for Contribution Platform",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye",
+  "postCreateCommand": [
+    "python -m venv .venv",
+    "source .venv/bin/activate",
+    "pip install --upgrade pip",
+    "pip install -r requirements.txt",
+    "pip install mesa", 
+    "pip install django djangorestframework psycopg2-binary flutterwave paystack" 
+  ],
+  "forwardPorts": [] 
+}
