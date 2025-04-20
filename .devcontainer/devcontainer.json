@@ -1,5 +1,5 @@
 {
-  "name": "Python 3.11 for Contribution Platform",
+  "name": "Python 3.11 and Node.js for Contribution Platform",
   "image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye",
   "postCreateCommand": [
     "python -m venv .venv",
@@ -7,7 +7,11 @@
     "pip install --upgrade pip",
     "pip install -r requirements.txt",
     "pip install mesa", 
-    "pip install django djangorestframework psycopg2-binary flutterwave paystack" 
+    "pip install django djangorestframework psycopg2-binary paystack",
+    "curl -fsSL https://deb.nodesource.com/setup_16.x | bash -",
+    "apt-get install -y nodejs",
+    "npm install -g react-native-cli",
+    "npm install"
   ],
-  "forwardPorts": [] 
+  "forwardPorts": []
 }
