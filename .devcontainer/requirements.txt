@@ -1,7 +1,6 @@
 Django>=4.2
 djangorestframework
 psycopg2-binary  # For PostgreSQL (adjust based on your database choice)
-flutterwave 
 paystack 
 mesa 
 # Add other required libraries here (e.g., for messaging, notifications)
